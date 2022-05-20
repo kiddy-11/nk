@@ -1,0 +1,21 @@
+@media(min-width:992px){
+    #nav .navbar-brand{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .4s ease-out;
+    }
+    #nav .navbar-brand.active{
+        left: 0;
+        transform: initial;
+    }
+    #main_menu ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-out;
+}
+    #main_menu ul.active{
+    opacity: 1;
+    visibility: visible;
+}
+}
